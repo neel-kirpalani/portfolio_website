@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Domine, Inter } from "next/font/google";
+import { about } from "@/content/projects";
 import "./globals.css";
 
 const domine = Domine({
@@ -33,6 +34,50 @@ export const metadata: Metadata = {
   },
 };
 
+/**
+ * Structured data. This is how a search engine learns that this domain, the
+ * LinkedIn profile, the Instagram account and the GitHub account are one
+ * person rather than four unrelated pages.
+ */
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Neel Kirpalani",
+  url: "https://neelkirpalani.com",
+  image: "https://neelkirpalani.com/neel.jpg",
+  jobTitle: "Student",
+  description:
+    "Senior at Hong Kong International School. Builds systems that turn a messy real-world signal into something a person can act on.",
+  alumniOf: {
+    "@type": "HighSchool",
+    name: "Hong Kong International School",
+  },
+  founderOf: {
+    "@type": "Organization",
+    name: "REMAKE",
+    url: "https://remake.beauty/",
+  },
+  knowsAbout: [
+    "Machine learning",
+    "Computer vision",
+    "Robotics",
+    "Embedded systems",
+    "Mobile development",
+  ],
+  sameAs: [
+    about.links.linkedin,
+    about.links.instagram,
+    about.links.github,
+  ],
+};
+
+const siteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Neel Kirpalani",
+  url: "https://neelkirpalani.com",
+};
+
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
@@ -50,7 +95,15 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${domine.variable} ${inter.variable}`}>
-      <body className="antialiased">{children}</body>
+      <body className="antialiased">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify([personSchema, siteSchema]),
+          }}
+        />
+        {children}
+      </body>
     </html>
   );
 }
