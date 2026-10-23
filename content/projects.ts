@@ -256,20 +256,12 @@ export const activities: Entry[] = [
       "Taught LEGO-based robotics to underprivileged primary students, leading build challenges built around confidence and teamwork.",
   },
   {
-    title: "Volunteer",
+    title: "Volunteer & Advocate",
     org: "Sai Kung Stray Friends Foundation",
     meta: "2023–24",
     logo: "/logos/sksf.png",
     detail:
-      "Over 100 hours of kennel care, feeding and socialising dogs to improve adoption readiness, plus weekend adoption drives and talking to prospective adopters.",
-  },
-  {
-    title: "Advocate & Content Creator",
-    org: "Animal Welfare & Sustainability",
-    meta: "2023–24",
-    logo: "/logos/sksf.png",
-    detail:
-      "Over 100 hours promoting animal welfare and plant-based living, designing the posters and social graphics behind it.",
+      "Over 100 hours of kennel care, feeding and socialising dogs to improve adoption readiness, plus weekend adoption drives and talking to prospective adopters. Also designed the posters and social graphics for the shelter's animal welfare and plant-based living campaigns.",
   },
   {
     title: "Freelance DJ",
