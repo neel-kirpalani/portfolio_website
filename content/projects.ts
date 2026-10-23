@@ -267,6 +267,7 @@ export const activities: Entry[] = [
     title: "Freelance DJ",
     org: "DJNK_HK",
     meta: "2021–present",
+    logo: "/logos/djnk.png",
     detail:
       "Performed at more than 30 events including Dragon-i and school proms. Live mixing across genres.",
   },
