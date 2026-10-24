@@ -299,11 +299,11 @@ export const about = {
   name: "Neel Kirpalani",
   location: "Hong Kong",
   bio: [
-    "I'm a senior at Hong Kong International School. I build systems that take a messy signal from the real world (the motion of a skateboard, a face, an object on a table) and turn it into something a person can actually act on.",
-    "Most recently I founded REMAKE, an AI beauty app that's live on the App Store with real users and revenue.",
-    "I captain 936A, our VEX robotics team. We took an Excellence Award, placed third in Hong Kong, and qualified for the World Championship.",
-    "Before that I built EcoWise, an app that rates the environmental impact of everyday objects, and won Best Overall at a school hackathon with a digital lost & found.",
-    "Away from a keyboard I DJ as DJNK_HK, play guitar, and play tennis.",
+    "I'm a senior at Hong Kong International School. I build systems that take messy real-world signals (the motion of a skateboard, a face, an object on a table) and turn them into something a person can actually act on.",
+    "Most recently, I founded REMAKE, an AI beauty app that's live on the App Store with real users and revenue.",
+    "I captain 936A, our VEX robotics team. We earned an Excellence Award, placed third in Hong Kong, and qualified for the World Championship.",
+    "Before that, I built EcoWise, an app that rates the environmental impact of everyday objects, and won Best Overall at a school hackathon with a digital lost-and-found.",
+    "Away from the keyboard, I DJ as DJNK_HK, play guitar, and play tennis.",
   ],
   links: {
     email: "neelkirpalani@gmail.com",
